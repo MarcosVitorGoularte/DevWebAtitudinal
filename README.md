@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevWebAtitudinal
 
-## Getting Started
+> Node.js v26.13.0 LTS
+> Extensões do VSCOde - Prettier, ESLint, Tailwind CSS IntelliSense
 
-First, run the development server:
+# Na primeira vez
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> git init
+> git clone URL_DO_REPOSITORIO
+> cd NOME_DO_PROJETO
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Instala as dependências que faltam
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> npm ci
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Executa
 
-## Learn More
+> npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# Muda para main
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> git switch main
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Pega o que tiver no github para o seu computador
 
-## Deploy on Vercel
+> git pull origin main
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Cria e já muda para uma branch diferente para não mexer direto na main (Se não quiser mandar direto para main)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> git switch -c feat/minha-funcionalidade
+
+# Vê os status dos arquivos
+
+> git status
+
+# Adicionar os arquivos
+
+> git add ArquivosQueVaiAdicionar
+
+# Nome do commit
+
+> git commit -m "feat: adiciona minha funcionalidade"
+
+# Vê qual a branch atual
+
+> git branch -vv
+
+# Manda pro github o que você fez
+
+> git push -u origin feat/minha-funcionalidade # branch
+> git push -u origin main # main
+
+# Verificar o código
+
+> npm run lint
+
+# Verificar a formatação
+
+> npm run format:check
+
+# Verificar os tipos TypeScript
+
+> npx tsc --noEmit
+
+# Testar a compilação
+
+> npm run build
