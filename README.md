@@ -1,5 +1,4 @@
 # DevWebAtitudinal
-
 > Node.js v26.13.0 LTS
 > Extensões do VSCOde - Prettier, ESLint, Tailwind CSS IntelliSense
 
