@@ -137,7 +137,7 @@ git diff
 Para adicionar todas as alterações que deseja enviar:
 
 ```powershell
-git add .
+git add nomeArquivo
 ```
 
 ## Passo 6. Criar um commit
