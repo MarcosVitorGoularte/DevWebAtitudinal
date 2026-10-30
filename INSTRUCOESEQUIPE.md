@@ -222,7 +222,7 @@ Faça suas alterações no VS Code e execute os testes apresentados na seção 3
 ## Passo 3. Adicionar os arquivos
 
 ```powershell
-git add .
+git add nomeArquivo
 ```
 
 ## Passo 4. Criar um commit
