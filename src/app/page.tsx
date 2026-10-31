@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Login() {
   return (
@@ -73,9 +74,9 @@ export default function Login() {
                 className="size-5 cursor-pointer"
               />
             </div>
-            <a href="" className="text-sm text-blue-700 hover:text-blue-900 hover:underline">
+            <Link href="" className="text-sm text-blue-700 hover:text-blue-900 hover:underline">
               Esqueci minha senha
-            </a>
+            </Link>
           </div>
 
           <button
