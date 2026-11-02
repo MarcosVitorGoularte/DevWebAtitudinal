@@ -83,6 +83,21 @@ const estudantes = [
   },
 ];
 
+const NOTA_MAXIMA = 5;
+
+function BarraNota({ valor }: { valor: number }) {
+  const porcentagem = Math.min(Math.max(valor / NOTA_MAXIMA, 0), 1) * 100;
+
+  return (
+    <div className="flex-1 h-4 rounded-full bg-sky-100 overflow-hidden">
+      <div
+        className="h-full rounded-full bg-blue-700 transition-all"
+        style={{ width: `${porcentagem}%` }}
+      />
+    </div>
+  );
+}
+
 export function GraficoPeriodo() {
   return (
     <section className="bg-white p-5 rounded-b-2xl rounded-tr-2xl">
@@ -118,7 +133,9 @@ export function GraficoPeriodo() {
       <section className="my-10">
         <div className="rounded-xl border border-sky-200 bg-sky-50 p-4 shadow-sky-300 shadow-md">
           <h2 className="mb-1 text-lg font-semibold text-sky-900">Atitudinal por período</h2>
-          <p className="mb-4 text-sm text-slate-600">Média de todos os estudantes em cada atitude</p>
+          <p className="mb-4 text-sm text-slate-600">
+            Média de todos os estudantes em cada atitude
+          </p>
 
           <div className="overflow-x-auto">
             <table className="w-full min-w-150 border-separate border-spacing-2">
@@ -191,13 +208,12 @@ export function GraficoPeriodo() {
               <GraficoRadar dados={estudante.dados} />
               <ul className="flex flex-col gap-1">
                 {estudante.dados.map((dado) => (
-                  <li key={dado.atitude} className="flex items-center gap-1">
-                    <span className="w-12">{dado.atitude}</span>
-                    <span
-                      className=" mx-1 h-4 rounded-2xl bg-blue-700"
-                      style={{ width: `${dado.valor * 27}px` }}
-                    ></span>
-                    <span className="font-semibold ml-auto">{dado.valor.toFixed(1)}</span>
+                  <li key={dado.atitude} className="flex items-center gap-2">
+                    <span className="w-12 shrink-0">{dado.atitude}</span>
+                    <BarraNota valor={dado.valor} />
+                    <span className="w-8 shrink-0 text-right font-semibold">
+                      {dado.valor.toFixed(1)}
+                    </span>
                   </li>
                 ))}
               </ul>

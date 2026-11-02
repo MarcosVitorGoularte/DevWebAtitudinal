@@ -1,3 +1,5 @@
+"use client"
+
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip } from "recharts";
 
 type dadoGraficoRadar = { atitude: string; valor: number };
