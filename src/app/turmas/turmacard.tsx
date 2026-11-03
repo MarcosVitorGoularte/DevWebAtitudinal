@@ -7,7 +7,7 @@ export default function TurmaCard({ turma }: { turma: Turma }) {
   return (
     <li>
       <Link
-        href={"/turmas/${turma.id}"}
+        href={"/turmas/" + turma.id}
         className="flex items-center justify-between rounded-2xl border border-blue-900 bg-white/60 p-5 shadow-md"
       >
         <div>

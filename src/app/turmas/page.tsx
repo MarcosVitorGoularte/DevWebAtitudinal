@@ -1,11 +1,6 @@
 import TurmaCard from "./turmacard";
 import Image from "next/image";
-
-const turmas = [
-  { id: 1, nome: "Terceiro Ano Tulipa" },
-  { id: 2, nome: "Segundo Ano Betônia" },
-  { id: 3, nome: "Primeiro Ano Abóbora" },
-];
+import { turmas } from "@/data/turmas";
 
 export default function TurmasPage() {
   return (
