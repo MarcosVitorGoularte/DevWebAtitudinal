@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RegistroPage() {
   return (
     <main className="min-h-screen bg-sky-100 p-4 text-blue-950">
@@ -94,9 +96,11 @@ export default function RegistroPage() {
             ></textarea>
           </div>
         </div>
-        <button className="mt-6 rounded-md bg-blue-700 px-4 py-2 font-medium text-white hover:bg-blue-800">
-          Salvar registro
-        </button>
+        <Link href="/professor/turmas/">
+          <button className="mt-6 rounded-md bg-blue-700 px-4 py-2 font-medium text-white hover:bg-blue-800">
+            Salvar registro
+          </button>
+        </Link>
       </section>
     </main>
   );

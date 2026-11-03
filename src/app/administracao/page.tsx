@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Header } from "@/components/header";
 import { GraficoPeriodo } from "@/components/graficosAdministracao/GraficoPeriodo";
+import { GraficoGeral } from "@/components/graficosAdministracao/GraficoGeral";
 
 type Tipo = "turma" | "periodo" | "geral";
 
@@ -32,6 +33,7 @@ export default function Administracao() {
         </div>
 
         {tipo === "periodo" && <GraficoPeriodo />}
+        {tipo === "geral" && <GraficoGeral />}
       </main>
     </>
   );

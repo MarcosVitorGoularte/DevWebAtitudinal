@@ -1,5 +1,6 @@
 import TurmaCard from "./turmacard";
 import Image from "next/image";
+import Link from "next/link";
 import { turmas } from "@/data/turmas";
 
 export default function TurmasPage() {
@@ -20,15 +21,17 @@ export default function TurmasPage() {
             </p>
           </div>
         </div>
-        <span className="rounded-full bg-blue-200 p-1">
-          <Image
-            src="/log-out.svg"
-            alt="Foto do professor"
-            width={30}
-            height={30}
-            className="aspect-square"
-          />
-        </span>
+        <Link href="/" className="contents">
+          <span className="rounded-full bg-blue-200 p-1">
+            <Image
+              src="/log-out.svg"
+              alt="Foto do professor"
+              width={30}
+              height={30}
+              className="aspect-square"
+            />
+          </span>
+        </Link>
       </header>
 
       <section className="p-6">
