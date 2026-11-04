@@ -4,8 +4,6 @@ Sistema web de avaliação atitudinal escolar, feito com Next.js, TypeScript e T
 
 ## Wireframes e mapa de navegação
 
-> Clique em qualquer imagem para abrir em tamanho original e dar zoom.
-
 <p align="center">
   <a href="./wireframe%26mapadenavegacao/mapa-de-navegacao.png">
     <img src="./wireframe%26mapadenavegacao/mapa-de-navegacao.png" alt="Mapa de navegação" width="100%">
@@ -71,7 +69,3 @@ Por enquanto as páginas não estão ligadas entre si. Para ver cada uma, digite
 | Administração (abas por turma, período e geral) | http://localhost:3000/administracao        |
 | Aluno · Início                                  | http://localhost:3000/aluno                |
 | Aluno · Autoavaliação                           | http://localhost:3000/aluno/autoavaliacao  |
-
-## Dúvidas
-
-O passo a passo de Git da equipe (branches, commits e pull requests) está em [`INSTRUCOESEQUIPE.md`](./INSTRUCOESEQUIPE.md).
