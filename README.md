@@ -2,6 +2,35 @@
 
 Sistema web de avaliação atitudinal escolar, feito com Next.js, TypeScript e Tailwind CSS.
 
+## Wireframes e mapa de navegação
+
+> Clique em qualquer imagem para abrir em tamanho original e dar zoom.
+
+<p align="center">
+  <a href="./wireframe%26mapadenavegacao/mapa-de-navegacao.png">
+    <img src="./wireframe%26mapadenavegacao/mapa-de-navegacao.png" alt="Mapa de navegação" width="100%">
+  </a>
+</p>
+
+<table>
+  <tr>
+    <th>Desktop</th>
+    <th>Celular</th>
+  </tr>
+  <tr>
+    <td width="70%">
+      <a href="./wireframe%26mapadenavegacao/wireframes-desktop.png">
+        <img src="./wireframe%26mapadenavegacao/wireframes-desktop.png" alt="Wireframes desktop" width="100%">
+      </a>
+    </td>
+    <td width="30%">
+      <a href="./wireframe%26mapadenavegacao/wireframecelular.png">
+        <img src="./wireframe%26mapadenavegacao/wireframecelular.png" alt="Wireframe celular" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Requisitos
 
 - **Node.js** `26.13.0 LTS`: [nodejs.org](https://nodejs.org/)
@@ -32,16 +61,16 @@ Para parar o servidor, pressione `Ctrl + C` no terminal.
 
 Por enquanto as páginas não estão ligadas entre si. Para ver cada uma, digite o endereço direto no navegador:
 
-| Página | Endereço |
-| --- | --- |
-| Login | http://localhost:3000/ |
-| Professor · Minhas turmas | http://localhost:3000/professor/turmas |
-| Professor · Turma (troque o número: 1, 2 ou 3) | http://localhost:3000/professor/turmas/1 |
-| Professor · Estudantes | http://localhost:3000/professor/estudantes |
-| Professor · Registro do estudante | http://localhost:3000/professor/registro |
-| Administração (abas por turma, período e geral) | http://localhost:3000/administracao |
-| Aluno · Início | http://localhost:3000/aluno |
-| Aluno · Autoavaliação | http://localhost:3000/aluno/autoavaliacao |
+| Página                                          | Endereço                                   |
+| ----------------------------------------------- | ------------------------------------------ |
+| Login                                           | http://localhost:3000/                     |
+| Professor · Minhas turmas                       | http://localhost:3000/professor/turmas     |
+| Professor · Turma (troque o número: 1, 2 ou 3)  | http://localhost:3000/professor/turmas/1   |
+| Professor · Estudantes                          | http://localhost:3000/professor/estudantes |
+| Professor · Registro do estudante               | http://localhost:3000/professor/registro   |
+| Administração (abas por turma, período e geral) | http://localhost:3000/administracao        |
+| Aluno · Início                                  | http://localhost:3000/aluno                |
+| Aluno · Autoavaliação                           | http://localhost:3000/aluno/autoavaliacao  |
 
 ## Dúvidas
 
