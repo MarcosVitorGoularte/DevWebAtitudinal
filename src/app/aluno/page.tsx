@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import { GraficoRadar } from "@/components/graficosAdministracao/GraficoRadar";
 import Link from "next/link";
 
@@ -85,7 +84,6 @@ function BarraNota({ valor }: { valor: number }) {
 export default function LoginAluno() {
   return (
     <>
-      <Header />
       <main className="p-4">
         <section className="mb-8">
           <div className="flex flex-col gap-4 rounded-xl border-2 border-sky-300 bg-slate-800 p-5 text-white sm:flex-row sm:items-center sm:justify-between">

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Header } from "@/components/header";
 import { GraficoPeriodo } from "@/components/graficosAdministracao/GraficoPeriodo";
 import { GraficoGeral } from "@/components/graficosAdministracao/GraficoGeral";
 import { GraficoTurma } from "@/components/graficosAdministracao/GraficoTurma";
@@ -17,7 +16,6 @@ export default function Administracao() {
   const [tipo, setTipo] = useState<Tipo>("turma");
   return (
     <>
-      <Header />
       <main className="p-4">
         <div className="flex gap-2 bg-white w-max p-3 rounded-t-xl max-[350px]:p-2">
           {abas.map((aba) => (

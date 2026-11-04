@@ -49,10 +49,10 @@ async function TurmaConteudo({ params }: { params: Promise<{ id: string }> }) {
           className="mx-auto block w-fit rounded-full bg-blue-600 px-8 py-3 fon-bold text-white shadow-lg"
         >
           {" "}
-          + Regsitrar Atitude{" "}
+          + Registrar Atitude{" "}
         </Link>
         <div className="grid grid-cols-2 gap-4">
-          <Link href="" className="contents">
+          <Link href="/professor/estudantes" className="contents">
             <StatCard icone="/user-round.svg" titulo="Alunos Matriculados">
               <p className="text-4xl font-bold">{turma.alunos}</p>
             </StatCard>
